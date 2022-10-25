@@ -12,5 +12,7 @@ apt-get upgrade -y
 pkg upgrade -y
 pkg install python wget -y
 pip uninstall telethon -y && pip install telethon
+pip uninstall pyrogram -y && pip install pyrogram
+pip install tgcrypto
 clear
 python3 ssgen.py
