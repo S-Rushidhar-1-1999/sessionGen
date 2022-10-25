@@ -1,6 +1,4 @@
 clear
-echo -e "\e[1m"
-echo -e "\e[0m"
 sec=5
 spinner=(⣻ ⢿ ⡿ ⣟ ⣯ ⣷)
 while [ $sec -gt 0 ]; do
@@ -13,6 +11,6 @@ apt-get update
 apt-get upgrade -y
 pkg upgrade -y
 pkg install python wget -y
-pip uninstall telethon -y && install telethon
+pip uninstall telethon -y && pip install telethon
 clear
 python3 ssgen.py
